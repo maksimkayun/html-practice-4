@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(247, 242, 242);
+    width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header,main,footer,aside{
+    padding: 5px;
+    background-color: white;
+    border-radius: 0.5rem;
+    margin: 10px;
+    font: 16px/1.5 Helvetica, sans-serif;
+    box-shadow: 0 0 5px;
+}
+header{
+    flex-shrink: 3;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    align-self: flex-start;
+    height: 50px;
+}
+main{
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-self: center;
+    height: 200px;
+    width: 620px;
+}
+aside{
+    flex-grow: 1;
+    align-self: center;
+    height: 200px;
+    width: 320px;
+}
+footer {
+    flex-wrap: wrap;
+    height: 50px;
+    flex-grow: 1;
+}
